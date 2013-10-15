@@ -1,12 +1,38 @@
 .latest-news {
-  font-family: serif;
+  font-family: georgia, serif;
 
   line-height: 1.4;
+
+  max-width: 500px;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -999em;
+}
+
+.uk-news {
+  border-color: #D61D00;
+}
+
+.football {
+  border-color: #008000;
+}
+
+.travel {
+  border-color: #066EC9;
 }
 
 .latest-news h1 {
-  position: absolute;
-  left: -999em;
+  color: #333;
+}
+
+.latest-news h1:after {
+  display: inline-block;
+  position: relative;
+  top: 8px;
+  /* Data URI? */
+  content: url(logo.png);
 }
 
 .latest-news ul {
@@ -15,12 +41,23 @@
 }
 
 .sections li {
+  border-top-width: 2px;
+  border-top-style: solid;
   background-color: #ededed;
+}
+
+.sections .active {
+  background-color: #fff;
 }
 
 .sections a {
   display: inline-block;
   padding: 0.5em;
+}
+
+.content li {
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 1em;
 }
 
 @media screen and (min-width: 32em) {
