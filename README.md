@@ -8,4 +8,7 @@
 
 ## To run
 
-Open `dist/index.html` in a browser
+    cd dist
+    python -m SimpleHTTPServer
+
+Then visit http://localhost:8000 in your browser.
