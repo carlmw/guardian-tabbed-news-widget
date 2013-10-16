@@ -11,6 +11,11 @@
   left: -999em;
 }
 
+.sections a {
+  box-sizing: border-box;
+  width: 100%;
+}
+
 .uk-news {
   border-color: #D61D00;
 }
